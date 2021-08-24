@@ -1,0 +1,91 @@
+$mainColor : #564C89;
+$altColor: #4EA8E2;
+$secColor: #D25A88;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* common classes*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $mainColor;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: $altColor;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $secColor;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+}
+
+/*active li at navbar*/
+.navActive {
+    color: $mainColor !important;
+    border-bottom: 2px solid $mainColor;
+}
+
+/* buttons */
+.customBtn {
+    border-color: $mainColor;
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: #fff;
+        color: $mainColor;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.altBtn {
+    border-color: $altColor;
+    background-color: #fff;
+    color: $altColor;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: $altColor;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+}
+@media (min-width : 992px) and (max-width : 1200px) {
+    .customBtn , .altBtn {
+        font-size: 0.8rem;
+    }
+}
+
+/*box shadoow */
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$SpreadRadius8px,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+}

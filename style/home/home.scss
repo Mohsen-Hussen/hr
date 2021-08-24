@@ -1,0 +1,109 @@
+@import '../partial/partial';
+
+/*hero*/
+.hero {
+    margin-top: 90px;
+    h2 {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+.about {
+    .aboutText {
+        h2 {
+            color: $altColor;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 3rem;
+        }
+        .customP {
+            color: $mainColor;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-left: 2px solid $secColor;
+            border-radius: 10px;
+        }
+        ul {
+            list-style: none;
+            i {
+                color: $altColor;
+            }
+        }
+    }
+    .aboutPlan {
+        // background: rgb(86,76,137);
+        // background: linear-gradient(90deg, rgba(86,76,137,1) 0%, rgba(78,168,226,1) 50%);
+        // color: #fff;
+        background-color: #ddd;
+        border-radius: 10px;
+        i {
+            color: $altColor
+        }
+        div:nth-child(2) span{
+            font-size: 2rem;
+            color: $secColor
+        }
+    }
+}
+
+/*feat*/
+.feat {
+    .badge {
+        background-color: $secColor;
+        color: #fff;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .card {
+        border: none;
+        background: rgb(86,76,137);
+        background: linear-gradient(300deg, rgba(86,76,137,1) 0%, rgba(78,168,226,1) 50%);
+        color: #fff;
+        @include BoxShadow(7px , 5px , 15px , -1px , rgba(100, 100, 100, 0.9));
+    }
+}
+
+/*blog*/
+.blog {
+    .badge {
+        background-color: $secColor;
+        color: #fff;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .card {
+        background-color: #eee;
+        span {
+            color: $altColor;
+        }
+        .card-title {
+            color: $mainColor;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .card-link {
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                letter-spacing: 2px;
+                color: $secColor;
+            }
+        }
+    }
+}
+
+/*request demo*/
+.requestDemo {
+    background: linear-gradient(300deg, rgba(86,76,137,0.8) 0%, rgba(78,168,226,0.7) 90%), url("../../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+    color: white;
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    i {
+        font-size: 3rem;
+    }
+}
+/*footer*/

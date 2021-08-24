@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* common classes*/
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #564C89; }
+    .sectionTitle h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #4EA8E2;
+      bottom: 1px;
+      left: calc(50% - 60px); }
+    .sectionTitle h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #D25A88;
+      bottom: 0;
+      left: calc(50% - 20px); }
+
+/*active li at navbar*/
+.navActive {
+  color: #564C89 !important;
+  border-bottom: 2px solid #564C89; }
+
+/* buttons */
+.customBtn {
+  border-color: #564C89;
+  background-color: #564C89;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .customBtn:hover {
+    background-color: #fff;
+    color: #564C89;
+    transition: all 0.5s ease-in-out; }
+
+.altBtn {
+  border-color: #4EA8E2;
+  background-color: #fff;
+  color: #4EA8E2;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .altBtn:hover {
+    background-color: #4EA8E2;
+    color: #fff;
+    transition: all 0.5s ease-in-out; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .customBtn, .altBtn {
+    font-size: 0.8rem; } }
+/*box shadoow */
+/*hero*/
+.hero {
+  margin-top: 90px; }
+  .hero h2 {
+    font-weight: bold;
+    letter-spacing: 2px; }
+
+.about .aboutText h2 {
+  color: #4EA8E2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3rem; }
+.about .aboutText .customP {
+  color: #564C89;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-left: 2px solid #D25A88;
+  border-radius: 10px; }
+.about .aboutText ul {
+  list-style: none; }
+  .about .aboutText ul i {
+    color: #4EA8E2; }
+.about .aboutPlan {
+  background-color: #ddd;
+  border-radius: 10px; }
+  .about .aboutPlan i {
+    color: #4EA8E2; }
+  .about .aboutPlan div:nth-child(2) span {
+    font-size: 2rem;
+    color: #D25A88; }
+
+/*feat*/
+.feat .badge {
+  background-color: #D25A88;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
+.feat .card {
+  border: none;
+  background: #564c89;
+  background: linear-gradient(300deg, #564c89 0%, #4ea8e2 50%);
+  color: #fff;
+  box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9);
+  -webkit-box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9);
+  -moz-box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9); }
+
+/*blog*/
+.blog .badge {
+  background-color: #D25A88;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
+.blog .card {
+  background-color: #eee; }
+  .blog .card span {
+    color: #4EA8E2; }
+  .blog .card .card-title {
+    color: #564C89;
+    font-weight: 500;
+    letter-spacing: 1px; }
+  .blog .card .card-link {
+    transition: all 0.5s ease-in-out; }
+    .blog .card .card-link:hover {
+      letter-spacing: 2px;
+      color: #D25A88; }
+
+/*request demo*/
+.requestDemo {
+  background: linear-gradient(300deg, rgba(86, 76, 137, 0.8) 0%, rgba(78, 168, 226, 0.7) 90%), url("../../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  color: white; }
+  .requestDemo h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .requestDemo i {
+    font-size: 3rem; }
+
+/*footer*/
+
+/*# sourceMappingURL=home.css.map */
