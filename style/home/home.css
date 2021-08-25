@@ -99,12 +99,13 @@
   color: #e1306c; }
 .foot .fa-linkedin {
   color: #0077b5; }
-.foot .footInfo {
+
+.footInfo {
   background: #564c89;
   background: linear-gradient(90deg, #564c89 0%, #4ea8e2 50%);
   color: #fff;
   font-size: 1.1rem; }
-  .foot .footInfo a {
+  .footInfo a {
     color: #fff; }
 
 /*hero*/
@@ -123,14 +124,13 @@
   color: #564C89;
   font-weight: bold;
   letter-spacing: 1px;
-  border-left: 2px solid #D25A88;
-  border-radius: 10px; }
+  border-left: 4px solid #D25A88; }
 .about .aboutText ul {
   list-style: none; }
   .about .aboutText ul i {
     color: #4EA8E2; }
 .about .aboutPlan {
-  background-color: #ddd;
+  background-color: #eee;
   border-radius: 10px; }
   .about .aboutPlan i {
     color: #4EA8E2; }
@@ -139,30 +139,24 @@
     color: #D25A88; }
 
 /*feat*/
-.feat .badge {
-  background-color: #D25A88;
-  color: #fff;
-  font-size: 1.2rem;
-  letter-spacing: 2px; }
 .feat .card {
-  border: none;
-  background: #564c89;
-  background: linear-gradient(300deg, #564c89 0%, #4ea8e2 50%);
-  color: #fff;
-  box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9);
-  -webkit-box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9);
-  -moz-box-shadow: 7px 5px 15px -1px rgba(100, 100, 100, 0.9); }
+  border: 1px solid #564C89;
+  transition: all 0.5s ease-in-out; }
+  .feat .card:hover {
+    box-shadow: 2px 2px 8px 2px rgba(160, 159, 159, 0.7);
+    -webkit-box-shadow: 2px 2px 8px 2px rgba(160, 159, 159, 0.7);
+    -moz-box-shadow: 2px 2px 8px 2px rgba(160, 159, 159, 0.7); }
+  .feat .card i {
+    color: #4EA8E2; }
+  .feat .card .card-body h3 {
+    color: #564C89; }
 
 /*blog*/
-.blog .badge {
-  background-color: #D25A88;
-  color: #fff;
-  font-size: 1.2rem;
-  letter-spacing: 2px; }
 .blog .card {
   background-color: #eee; }
   .blog .card span {
-    color: #4EA8E2; }
+    color: #4EA8E2;
+    font-size: 0.9rem; }
   .blog .card .card-title {
     color: #564C89;
     font-weight: 500;
@@ -178,7 +172,7 @@
 .requestDemo {
   background: linear-gradient(300deg, rgba(86, 76, 137, 0.8) 0%, rgba(78, 168, 226, 0.7) 90%), url("../../img/cta-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 80px 0;
   color: white; }
   .requestDemo h3 {
     font-size: 2rem;
