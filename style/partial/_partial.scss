@@ -89,3 +89,57 @@ $secColor: #D25A88;
     -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
     -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
 }
+
+/*footer*/
+.foot {
+    h4 {
+        color: $mainColor;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    i {
+        color: $altColor
+    }
+    a {
+        text-decoration: none;
+        color: $mainColor;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            letter-spacing: 2px;
+            color: $secColor;
+            font-weight: bold;
+        }
+    }
+    .fab {
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            transform: rotate(1turn);
+            cursor: pointer;
+        }
+    }
+    .fa-facebook {
+        color: #1877f2;
+    }
+    .fa-youtube {
+        color: #ff0000;
+    }
+    .fa-twitter {
+        color: #1da1f2;
+    }
+    .fa-instagram {
+        color: #e1306c;
+    }
+    .fa-linkedin {
+        color: #0077b5;
+    }
+    .footInfo {
+        background: rgb(86,76,137);
+        background: linear-gradient(90deg, rgba(86,76,137,1) 0%, rgba(78,168,226,1) 50%);
+        color: #fff;
+        font-size: 1.1rem;
+        a {
+            color: #fff;
+        }
+    }
+}

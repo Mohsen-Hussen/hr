@@ -68,6 +68,45 @@
   .customBtn, .altBtn {
     font-size: 0.8rem; } }
 /*box shadoow */
+/*footer*/
+.foot h4 {
+  color: #564C89;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold; }
+.foot i {
+  color: #4EA8E2; }
+.foot a {
+  text-decoration: none;
+  color: #564C89;
+  transition: all 0.5s ease-in-out; }
+  .foot a:hover {
+    letter-spacing: 2px;
+    color: #D25A88;
+    font-weight: bold; }
+.foot .fab {
+  transition: all 0.5s ease-in-out; }
+  .foot .fab:hover {
+    transform: rotate(1turn);
+    cursor: pointer; }
+.foot .fa-facebook {
+  color: #1877f2; }
+.foot .fa-youtube {
+  color: #ff0000; }
+.foot .fa-twitter {
+  color: #1da1f2; }
+.foot .fa-instagram {
+  color: #e1306c; }
+.foot .fa-linkedin {
+  color: #0077b5; }
+.foot .footInfo {
+  background: #564c89;
+  background: linear-gradient(90deg, #564c89 0%, #4ea8e2 50%);
+  color: #fff;
+  font-size: 1.1rem; }
+  .foot .footInfo a {
+    color: #fff; }
+
 /*hero*/
 .hero {
   margin-top: 90px; }
@@ -132,7 +171,8 @@
     transition: all 0.5s ease-in-out; }
     .blog .card .card-link:hover {
       letter-spacing: 2px;
-      color: #D25A88; }
+      color: #D25A88;
+      font-weight: bold; }
 
 /*request demo*/
 .requestDemo {
@@ -146,7 +186,5 @@
     letter-spacing: 2px; }
   .requestDemo i {
     font-size: 3rem; }
-
-/*footer*/
 
 /*# sourceMappingURL=home.css.map */
