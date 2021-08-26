@@ -106,7 +106,6 @@ $secColor: #D25A88;
         color: $mainColor;
         transition: all 0.5s ease-in-out;
         &:hover {
-            letter-spacing: 2px;
             color: $secColor;
             font-weight: bold;
         }
@@ -141,5 +140,6 @@ $secColor: #D25A88;
         a {
             color: #fff;
         }
+        
     }
 }
