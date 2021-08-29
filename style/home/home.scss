@@ -7,7 +7,78 @@
         font-weight: bold;
         letter-spacing: 2px;
     }
+    .heroShapes {
+        position: relative;
+        .circle {
+            width: 300px;
+            height: 300px;
+            background: $altColor;
+            border-radius: 50%;
+            position: absolute;
+            top: -180px;
+            left: -195px;
+        }
+        .square {
+            width: 30px;
+            height: 30px;
+            border: 2px solid $mainColor;
+            position: absolute;
+            border-radius: 8px;
+            top: 30px;
+            left: 10px;
+            opacity: 0.3;
+            animation: floatingOne 5s ease-in-out infinite;
+        }
+        .triangle-bottomright {
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-bottom: 50px solid $secColor;
+            border-left: 50px solid transparent;
+            bottom: 135px;
+            right: 50px;
+            opacity: 0.3;
+            animation: floatingTwo 5s cubic-bezier(0.96,-0.24, 0.3, 0.46) infinite;
+        }
+        .circleRight {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            border: 2px solid $altColor;
+            opacity: 0.3;
+            animation: floatingOne 5s ease-in-out infinite;
+        }
+    }
 }
+/*animation*/
+@keyframes floatingOne {
+    0% {
+        transform: translateX(0%) rotate(-55deg);
+    }
+    50% {
+        transform: translateX(150%) rotate(360deg);
+    }
+    100% {
+        transform: translateX(0%) rotate(-55deg);
+    }
+}
+
+/*animation*/
+@keyframes floatingTwo {
+    0% {
+        transform: translateX(0%) rotate(-55deg);
+    }
+    50% {
+        transform: translateX(100%) rotate(55deg);
+    }
+    100% {
+        transform: translateX(0%) rotate(-55deg);
+    }
+}
+
 .about {
     .aboutText {
         h2 {

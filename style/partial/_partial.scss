@@ -104,7 +104,7 @@ $secColor: #D25A88;
     a {
         text-decoration: none;
         color: $mainColor;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease;
         &:hover {
             color: $secColor;
             font-weight: bold;
